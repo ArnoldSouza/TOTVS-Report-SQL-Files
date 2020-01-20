@@ -1,3 +1,5 @@
+--TODO: Revisar query. Aparentemente o resultado apresenta multiplicidade de linhas.
+
 WITH APROVACOES AS (
 	SELECT
 		--IDENTIFICAÇÃO LOCAL
