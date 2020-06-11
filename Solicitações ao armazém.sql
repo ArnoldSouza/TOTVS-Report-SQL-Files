@@ -1,4 +1,4 @@
-SELECT
+SELECT top 10
 	CAST(SCP010.CP_EMISSAO AS DATETIME) AS 'DT EMISSÃO', 
 	Case RTrim(Coalesce(CP_DTLIB1,'')) WHEN ''  THEN Null ELSE convert(datetime, CP_DTLIB1, 112)END as 'DT LIBERADO1',
 	Case RTrim(Coalesce(CP_DTLIB2,'')) WHEN ''  THEN Null ELSE convert(datetime, CP_DTLIB2, 112)END as 'DT LIBERADO2',
