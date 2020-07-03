@@ -1,3 +1,5 @@
+--Consulta realizada por terceiro
+
 --#######		TITULOS ATRAVES DE NFE QUE SOFRERAM FATURA #########
 SELECT CCUSTO AS GERCCCOD,
 	NATUREZA AS GERNATCOD,
