@@ -1,9 +1,9 @@
 /* DECLARAÇÃO INICIAL DE CONFIGURAÇÃO */
 SET NOCOUNT ON
 /*  DECLARA VARIÁVEIS  */
-DECLARE @dateFrom datetime = '20190101'
+DECLARE @dateFrom datetime = '20200101'
 DECLARE @dateTo datetime = '20201231'
-DECLARE @filial varchar(2) = '13'
+DECLARE @filial varchar(2) = '07'
 /* CHECA SE A TABELA TEMPORÁRIA #movimentos JÁ EXISTE E A DELETA */
 IF OBJECT_ID('tempdb..#movimentos') IS NOT NULL DROP TABLE #movimentos
 /* -------------------------------------------------------------------------- */

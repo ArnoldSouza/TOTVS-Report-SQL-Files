@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="endicon" uuid="a70643d7-4889-43a4-8d13-4abd25e061c4">
+    <data-source source="LOCAL" name="Endicon Estoque" uuid="a70643d7-4889-43a4-8d13-4abd25e061c4">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <remarks>conexão com erp endicon</remarks>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://192.168.254.202;database=PROTHEUS</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://192.168.254.204;database=PROTHEUS</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Endicon Geral" uuid="dd23a434-6293-406f-9fb1-e223e1a78b1b">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://192.168.254.204;database=PROTHEUS</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Protheus Homologação" uuid="3eed5ada-6c28-4d72-b3b3-06c86ee5fd74">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://192.168.254.46;database=PROTHEUS</jdbc-url>
     </data-source>
   </component>
 </project>
