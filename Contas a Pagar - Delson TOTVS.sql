@@ -29,17 +29,16 @@ SELECT CCUSTO AS GERCCCOD,
 	PARCELA AS GERPARCEL
 --,REF
 FROM (
-	SELECT (
-			CASE
-				WHEN D1_CC = ''
-					AND C7_CC <> ''
-					THEN C7_CC
-				WHEN D1_CC = ''
-					AND C7_CC = ''
-					THEN C1_CC
-				ELSE D1_CC
-				END
-			) AS CCUSTO,
+	SELECT
+       (
+            CASE
+                WHEN D1_CC = '' AND C7_CC <> ''
+                    THEN C7_CC
+                WHEN D1_CC = '' AND C7_CC = ''
+                    THEN C1_CC
+                ELSE D1_CC
+            END
+        ) AS CCUSTO,
 		SE5.E5_NATUREZ AS NATUREZA,
 		SE5.E5_PREFIXO AS PREFIXO,
 		SE5.E5_NUMERO AS NUMERO,
